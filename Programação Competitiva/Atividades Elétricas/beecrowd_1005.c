@@ -18,7 +18,6 @@ return 0;
 }
 
 
-#include <stdio.h>
 int main(){
 printf("fiquei 6 anos tentando entender como q eu ia deixar a media indo de 0 a 10 vou mentir nao\n");
 return 0;
