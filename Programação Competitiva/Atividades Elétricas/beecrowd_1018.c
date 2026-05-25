@@ -1,11 +1,10 @@
 #include <stdio.h>
  
 int main() {
-    int x;
-    double num, ndois, ncinc, ndez, nvin, ncinq, ncem;
+    int x, d, num, ndois, ncinc, ndez, nvin, ncinq, ncem;
     
     scanf("%d", &x);
-    
+    d = x;  
     ncem = x/100;
     x = x % 100;
     
@@ -26,5 +25,7 @@ int main() {
     
     num = x;
     
-    printf("%d\n%lf nota(s) de R$ 100,00\n%lf nota(s) de R$ 50,00\n%lf nota(s) de R$ 20,00\n%lf nota(s) de R$ 10,00\n%lf nota(s) de R$ 5,00\n%lf nota(s) de R$ 2,00\n%lf nota(s) de R$ 1,00\n", x, ncem, ncinq, nvin, ndez, ncinc, ndois, num);
+    printf("%d\n%d nota(s) de R$ 100,00\n%d nota(s) de R$ 50,00\n%d nota(s) de R$ 20,00\n%d nota(s) de R$ 10,00\n%d nota(s) de R$ 5,00\n%d nota(s) de R$ 2,00\n%d nota(s) de R$ 1,00\n", d, ncem, ncinq, nvin, ndez, ncinc, ndois, num);
     return 0;}
+
+//coisa simples
