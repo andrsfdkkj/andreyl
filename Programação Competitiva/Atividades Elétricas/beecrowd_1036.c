@@ -24,4 +24,4 @@ int main() {
     return 0;}
 
 
-// deu erro no beecrowd! mas deu certo no compilador, então o problema é o beecrowd
+// deu erro no beecrowd! mas deu certo no compilador, então o problema é o beecrowd claramente e nao esse meu codigo horroroso
