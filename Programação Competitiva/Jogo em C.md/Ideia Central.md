@@ -6,7 +6,7 @@ Variáveis, Printf, Scanf, If Else, Operadores Lógicos, Expressões Matemática
 ```
 ## Estrutura do jogo 
 Um jogo feito por escolhas, com desafios simples e progressão contínua.
-4 Capítulos, 1 personagem principal, inimigos simples, história simples, múltiplos caminhos para seguir.
+4 Capítulos, sistema de vida que se chegar a 0 o Yk morre, 1 personagem principal, inimigos simples, história simples, múltiplos caminhos para seguir.
 
 
 Desafios variados, por exemplo: 
