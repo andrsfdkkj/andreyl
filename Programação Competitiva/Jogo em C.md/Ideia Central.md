@@ -19,5 +19,5 @@ O personagem, chamado Yk(mais fácil de escrever no código), Yk estava no Labor
 - Capítulo 2(While Drone):
 Com o caminho padrão, Yk escapou do laboratório com vida, no corredor viu um drone voando, e resolveu segui-lo, ele seguiu o drone, que foi parar na quadra. Mas Yk notou que o drone estava em sua maldade e tentou te atacar, ele teve pouco tempo pra reagir, ele se esquiva do ataque e pensa no que fazer em seguida... ele resolve tentar acertar uma bola no drone, mas para isso, um minigame (o jogador deve se sobressair em algum desafio), o drone cai, e vê uma telinha pedindo pra que ele resolva Exercícios de Portas Lógicas para liberar um papel misterioso, ele consegue e um papelzinho pula do drone e vê escrito "Venha na Biblioteca, se for mais rápido que as IAs..." Determinado ele se prepara pra sair da Quadra, mas se assusta... Ao ver diversos robôs em exoesqueleto indo em direção a ele...
 
-- Capítulo 3(C(orra)!=):
+- Capítulo 3(CorrIF):
 
