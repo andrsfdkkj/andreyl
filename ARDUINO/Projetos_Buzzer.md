@@ -1,4 +1,46 @@
-Piratas do caribe, do re mi fa, musica top, odeAlegria:
+4 Frequencias botões:
+```
+#define buzzer 2
+#define but1 3
+#define but2 4
+#define but3 7
+#define but4 8
+void setup()
+{
+  pinMode(buzzer, OUTPUT);
+    pinMode(but1, INPUT);
+  	pinMode(but2, INPUT);
+	pinMode(but3, INPUT);
+  	pinMode(but4, INPUT);
+
+}
+
+void loop()
+{
+  if(digitalRead(but1) == HIGH){
+    tone(buzzer, 262);}
+  
+  else if(digitalRead(but2) == HIGH){
+    tone(buzzer, 330);
+  }
+ else if(digitalRead(but3) == HIGH){
+    tone(buzzer, 392);
+  }
+  else if(digitalRead(but4) == HIGH){
+    tone(buzzer, 523);
+  }
+    
+  else{ noTone(buzzer);}
+  
+  
+  delay(10);
+}
+```
+
+
+
+
+Botões com músicas (Piratas do caribe, do re mi fa, musica top, odeAlegria):
 ```
 #define buz 2
 #define b1 7
