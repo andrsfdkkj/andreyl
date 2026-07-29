@@ -22,24 +22,20 @@ void setup(){
   pinMode(echo, INPUT);
   pinMode(trig, OUTPUT);
 }
-
-
-void ledsoff(int tempo){
-     digitalWrite(led1, 0);
-     digitalWrite(led2, 0);
-     digitalWrite(led3, 0);
-     digitalWrite(led4, 0);
-     delay(tempo * 1000);
-}
-
 void ledson(int tempo){
      digitalWrite(led1, 1);
      digitalWrite(led2, 1);
      digitalWrite(led3, 1);
      digitalWrite(led4, 1);
-     delay(tempo * 1000);
+     delay(tempo);
 }
-
+void ledsoff(int tempo){
+     digitalWrite(led1, 0);
+     digitalWrite(led2, 0);
+     digitalWrite(led3, 0);
+     digitalWrite(led4, 0);
+     delay(tempo);
+}
 void loop(){
   
   digitalWrite(trig, 1);
@@ -54,57 +50,49 @@ void loop(){
   Serial.print(distancia);
   Serial.println(" cm");
 
-  // distancia no monitor serial       
-   
-  if(distancia >= 110 && distancia <= 130){
-     
-     void ledsoff(3);
-     void ledson(3);
+  // distancia no monitor serial só pra ter né KK   
 
+  if(distancia >= 110 && distancia <= 130){
+     ledson(1500);
+     ledsoff(1500);
+     
      noTone(buzz);
   }
-
-
   else if(distancia >= 88 && distancia <= 110){ 
+     ledson(900);
+     ledsoff(900);
      
-     void ledsoff(1);
-     void ledson(1);
-
      noTone(buzz);
-    
-   }
+  }
    else if(distancia >= 66 && distancia <= 88){ 
+     ledson(350);
+     ledsoff(350);
      
-     void ledsoff(0.4);
-     void ledson(0.4);
-
      noTone(buzz);
-
    }
-  
    else if(distancia >= 44 && distancia <= 66){ 
-     void ledsoff(0.2);
-     void ledson(0.2);
-
+     ledson(200);
+     ledsoff(200);
+     
      noTone(buzz);
     } 
-  
    else if(distancia >= 22 && distancia <= 44){ 
      
-     void ledsoff(0.05);
-     void ledson(0.05);
+     ledson(95);
+     ledsoff(95);
 
      noTone(buzz);
    }
    else if(distancia <= 22){ 
      
-     void ledsoff(0.05);
-     void ledson(0.05);
-    
-     tone(buzz, 1000);
+     ledson(35);
+     ledsoff(35);
+     
+     tone(buzz, 100, 10);
+     tone(buzz, 3000, 10);
    }
    else{
-     void ledson(0);
+     ledsoff(1);
      noTone(buzz);
   }
    delay(10);
