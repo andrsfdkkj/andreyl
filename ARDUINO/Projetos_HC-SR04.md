@@ -23,6 +23,23 @@ void setup(){
   pinMode(trig, OUTPUT);
 }
 
+
+void ledsoff(int tempo){
+     digitalWrite(led1, 0);
+     digitalWrite(led2, 0);
+     digitalWrite(led3, 0);
+     digitalWrite(led4, 0);
+     delay(tempo * 1000);
+}
+
+void ledson(int tempo){
+     digitalWrite(led1, 1);
+     digitalWrite(led2, 1);
+     digitalWrite(led3, 1);
+     digitalWrite(led4, 1);
+     delay(tempo * 1000);
+}
+
 void loop(){
   
   digitalWrite(trig, 1);
@@ -40,106 +57,57 @@ void loop(){
   // distancia no monitor serial       
    
   if(distancia >= 110 && distancia <= 130){
-     digitalWrite(led1, 1);
-     digitalWrite(led2, 1);
-     digitalWrite(led3, 1);
-     digitalWrite(led4, 1);
-     delay(3000);
-     digitalWrite(led1, 0);
-     digitalWrite(led2, 0);
-     digitalWrite(led3, 0);
-     digitalWrite(led4, 0);
-     delay(3000);
+     
+     void ledsoff(3);
+     void ledson(3);
 
-    noTone(buzz);
+     noTone(buzz);
   }
 
 
   else if(distancia >= 88 && distancia <= 110){ 
      
-     digitalWrite(led1, 1);
-     digitalWrite(led2, 1);
-     digitalWrite(led3, 1);
-     digitalWrite(led4, 1);
-     delay(1000);
-     digitalWrite(led1, 0);
-     digitalWrite(led2, 0);
-     digitalWrite(led3, 0);
-     digitalWrite(led4, 0);
-     delay(1000);
+     void ledsoff(1);
+     void ledson(1);
 
      noTone(buzz);
+    
    }
    else if(distancia >= 66 && distancia <= 88){ 
      
-     digitalWrite(led1, 1);
-     digitalWrite(led2, 1);
-     digitalWrite(led3, 1);
-     digitalWrite(led4, 1);
-     delay(400);
-     digitalWrite(led1, 0);
-     digitalWrite(led2, 0);
-     digitalWrite(led3, 0);
-     digitalWrite(led4, 0);
-     delay(400);
+     void ledsoff(0.4);
+     void ledson(0.4);
 
      noTone(buzz);
+
    }
   
    else if(distancia >= 44 && distancia <= 66){ 
-     digitalWrite(led1, 1);
-     digitalWrite(led2, 1);
-     digitalWrite(led3, 1);
-     digitalWrite(led4, 1);
-     delay(200);
-     digitalWrite(led1, 0);
-     digitalWrite(led2, 0);
-     digitalWrite(led3, 0);
-     digitalWrite(led4, 0);
-     delay(200);
+     void ledsoff(0.2);
+     void ledson(0.2);
+
+     noTone(buzz);
     } 
   
    else if(distancia >= 22 && distancia <= 44){ 
      
-     digitalWrite(led1, 1);
-     digitalWrite(led2, 1);
-     digitalWrite(led3, 1);
-     digitalWrite(led4, 1);
-     delay(50);
-     digitalWrite(led1, 0);
-     digitalWrite(led2, 0);
-     digitalWrite(led3, 0);
-     digitalWrite(led4, 0);
-     delay(50);
-     
+     void ledsoff(0.05);
+     void ledson(0.05);
+
      noTone(buzz);
-   ;}
-     
+   }
    else if(distancia <= 22){ 
      
-     digitalWrite(led1, 1);
-     digitalWrite(led2, 1);
-     digitalWrite(led3, 1);
-     digitalWrite(led4, 1);
-     delay(50);
-     digitalWrite(led1, 0);
-     digitalWrite(led2, 0);
-     digitalWrite(led3, 0);
-     digitalWrite(led4, 0);
-     delay(50);
+     void ledsoff(0.05);
+     void ledson(0.05);
     
      tone(buzz, 1000);
    }
    else{
-     
-     digitalWrite(led1, 0);
-     digitalWrite(led2, 0);
-     digitalWrite(led3, 0);
-     digitalWrite(led4, 0);
-     
+     void ledson(0);
      noTone(buzz);
- }
- delay(10);
+  }
+   delay(10);
   }
 // ASS:ANDREYIFB
 ```
