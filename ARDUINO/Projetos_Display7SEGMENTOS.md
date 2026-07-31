@@ -1,4 +1,5 @@
 Contagem 1 ao 9 Automática
+Materiais: Display, Arduino, Protoboard, Jumpers, 2 resistores 1k.
 ```
 #define A 2
 #define B 3
