@@ -7,7 +7,7 @@ int main(){
     
     for(int i=1; i <=  N; i++){
         scanf("%d", &n);
-        printf("respota %d: %d\n", i, n);
+        printf("resposta %d: %d\n", i, n);
  
  
  
